@@ -10,7 +10,7 @@ class ProcessCompose < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/F1bonacc1/process-compose/releases/download/v0.43.2/process-compose_0.43.2_Darwin_arm64.tar.gz"
-      sha256 "6d190885a13e065df0c9de350c445077ee0794b0f8cbdfa489540d8dfbf15eac"
+      sha256 "0b0dea229e83a454cd212e6500891e4ca15b0c38541f26c95cb6694e3846cdff"
 
       def install
         bin.install "process-compose"
@@ -18,7 +18,7 @@ class ProcessCompose < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/F1bonacc1/process-compose/releases/download/v0.43.2/process-compose_0.43.2_Darwin_x86_64.tar.gz"
-      sha256 "7c0acdc32900c3104db8f25fcbc546a9b82808d4b1dbb895f7a759aa33a43724"
+      sha256 "153576673715741c676ce2349601c378f1bc72b9e937383fd1293930482f2713"
 
       def install
         bin.install "process-compose"
@@ -29,7 +29,7 @@ class ProcessCompose < Formula
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/F1bonacc1/process-compose/releases/download/v0.43.2/process-compose_0.43.2_Linux_armv6.tar.gz"
-      sha256 "fc19e6feddc12b63a98b3d5ec5582358bdb2d4889d0f14379d94c05cd683d888"
+      sha256 "d0b4afd5b01c65a30ae1f30efcb38dd27a81b0a67d66fa15a0be6d04dce2f2ce"
 
       def install
         bin.install "process-compose"
@@ -37,7 +37,7 @@ class ProcessCompose < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/F1bonacc1/process-compose/releases/download/v0.43.2/process-compose_0.43.2_Linux_arm64.tar.gz"
-      sha256 "deecfa40d379e9e2cf7c54ac93f71260da5f9518abb42f12dc276cd2cae59a20"
+      sha256 "057e9e9720adbe706ccb44ce049994cbcac4ee4917344c1facd399acfd042a0a"
 
       def install
         bin.install "process-compose"
@@ -45,7 +45,7 @@ class ProcessCompose < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/F1bonacc1/process-compose/releases/download/v0.43.2/process-compose_0.43.2_Linux_x86_64.tar.gz"
-      sha256 "c67806b37b5b14dff1be8cf424a3cbdeb0de15cb8aef95cdd3d52c920b7a0495"
+      sha256 "e750231f449b2c938850123715092c8bbf150d0e4f4362abf310823b3c066b68"
 
       def install
         bin.install "process-compose"
