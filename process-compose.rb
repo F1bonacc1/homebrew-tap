@@ -5,20 +5,20 @@
 class ProcessCompose < Formula
   desc ""
   homepage "https://github.com/F1bonacc1/process-compose"
-  version "1.78.0"
+  version "1.85.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/F1bonacc1/process-compose/releases/download/v1.78.0/process-compose_darwin_amd64.tar.gz"
-      sha256 "ecf3ee0b4eb4363d4a9f392d7a5d5fe769ff29b84e4bbcfa8b5f634ca44c4db9"
+      url "https://github.com/F1bonacc1/process-compose/releases/download/v1.85.0/process-compose_darwin_amd64.tar.gz"
+      sha256 "3b65e084171b15a849d190146cef1afcf75f9f57321cf29957de9fa3a6aa8880"
 
       def install
         bin.install "process-compose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/F1bonacc1/process-compose/releases/download/v1.78.0/process-compose_darwin_arm64.tar.gz"
-      sha256 "c8ae7a87f4f262db162a5aaaa803b6379323226997a8b9afe34c50dd52a600a8"
+      url "https://github.com/F1bonacc1/process-compose/releases/download/v1.85.0/process-compose_darwin_arm64.tar.gz"
+      sha256 "e96650c7fd1a5fa0f379427f45c1a100fc27017e9195b7298ba66294fc32b5dd"
 
       def install
         bin.install "process-compose"
@@ -29,8 +29,8 @@ class ProcessCompose < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.78.0/process-compose_linux_amd64.tar.gz"
-        sha256 "608070583e3f410b20b9c7139c407f25c57b0367c56f141b6a5e1ba2fa6b820b"
+        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.85.0/process-compose_linux_amd64.tar.gz"
+        sha256 "1bc57e5863f0dd39e3d90d87201917e8444578f8c551db58dd0823ac9fc5f9f8"
 
         def install
           bin.install "process-compose"
@@ -39,8 +39,8 @@ class ProcessCompose < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.78.0/process-compose_linux_arm.tar.gz"
-        sha256 "cf85f88f93a764ecc71fa6f0c09b8e398b0d524c19ece08776688be5bb3cd498"
+        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.85.0/process-compose_linux_arm.tar.gz"
+        sha256 "68a213adcae89002e4d2e2cd69bf2f485e80ed13eb752305e899f6636d1545e8"
 
         def install
           bin.install "process-compose"
@@ -49,8 +49,8 @@ class ProcessCompose < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.78.0/process-compose_linux_arm64.tar.gz"
-        sha256 "02e7f137d9fbf425631250c46b933d565ccd3df734139cf2f308f854051b9476"
+        url "https://github.com/F1bonacc1/process-compose/releases/download/v1.85.0/process-compose_linux_arm64.tar.gz"
+        sha256 "6c4d4a295c164a3fbed859887963485909a789ded7423e3b2021a954031b3765"
 
         def install
           bin.install "process-compose"
